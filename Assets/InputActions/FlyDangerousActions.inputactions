@@ -1,0 +1,4105 @@
+{
+    "name": "FlyDangerousActions",
+    "maps": [
+        {
+            "name": "Global",
+            "id": "8804f5c8-213c-478d-867a-b44329ec345e",
+            "actions": [
+                {
+                    "name": "Reset HMD View",
+                    "type": "Button",
+                    "id": "0ac8ccd5-c4f5-414f-86f8-2717d1c497dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Console",
+                    "type": "Button",
+                    "id": "3c90a3e8-ca40-4b53-bfa3-28640b4ca8ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Show Game Menu",
+                    "type": "Button",
+                    "id": "d5d3f353-dda3-4a76-9176-7f638059dabd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Free Cam",
+                    "type": "Button",
+                    "id": "7eb34af9-81a8-4176-ad10-f2913506a2a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Restart Track",
+                    "type": "Button",
+                    "id": "7b7c5126-6685-4704-9219-dd6ddab798f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "580ea396-2c38-4802-a6b3-58d9c32b4102",
+                    "path": "<Keyboard>/f11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Reset HMD View",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d1e4d79-b0a7-44d9-97dc-53a8a06ee117",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Reset HMD View",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98605d84-24e0-4798-bae4-a45bebe8be90",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Console",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd64af8e-e766-40d5-a920-c29534dafd2a",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Show Game Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea3a06a0-5d52-4fe8-bf82-6addca9314ac",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Show Game Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0d9558d-16a9-4787-80d0-fc905ef581bf",
+                    "path": "<Keyboard>/f5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Free Cam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93cc2cbc-aa5f-4882-8c19-a68c6b2f66b4",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "80cfc569-feb9-4e09-872d-61f839d95488",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GlobalArcade",
+            "id": "e3b45f6b-d13f-4131-a96f-a169cd54ecac",
+            "actions": [
+                {
+                    "name": "Reset HMD View",
+                    "type": "Button",
+                    "id": "40ada5c8-ec47-4851-a112-a0536341bb6e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Console",
+                    "type": "Button",
+                    "id": "f3206437-fdb8-460e-ae4e-bddd14f79d8b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Show Game Menu",
+                    "type": "Button",
+                    "id": "0e24ddee-e7ee-4190-aa0c-f05339e0cf8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Toggle Free Cam",
+                    "type": "Button",
+                    "id": "75a36a4d-f764-47e4-a1ec-09c455d6d914",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Restart Track",
+                    "type": "Button",
+                    "id": "42df12e0-4e49-4e25-b43f-4f21262d4686",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4202cc87-53d3-4e44-be91-f745f9197e67",
+                    "path": "<Keyboard>/f11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Reset HMD View",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e784d43-c724-460a-abbf-e22a1ccc7d7f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Reset HMD View",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e1e515e-b089-4fbb-a946-17b4bd4f16c1",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Console",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11098029-6ef0-46d1-a65c-894aa53c2a5d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Show Game Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab2fc261-9e0a-473a-9a1c-7bc67daedad9",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Show Game Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10d691be-a0ff-4bcf-b8e0-8702e1e10199",
+                    "path": "<Keyboard>/f5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Free Cam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "729a90ac-81b8-4c4d-af92-11792c4fff50",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "698fe503-ee69-47ee-bf17-d554a5401862",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Ship",
+            "id": "319c08b3-97e0-4636-a79a-bb6bde0a90f7",
+            "actions": [
+                {
+                    "name": "Restart From Last Checkpoint",
+                    "type": "Button",
+                    "id": "3993f125-cf34-44e0-9b9f-32a99ebb6c23",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pitch",
+                    "type": "Value",
+                    "id": "8043ded1-0ef3-4f85-b28b-3e3139edb133",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pitch Alt",
+                    "type": "Value",
+                    "id": "7550d24f-1c38-429f-ae21-28d6dd026dec",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll",
+                    "type": "Value",
+                    "id": "4fd269dd-a7ed-42d2-864e-e528e090bd09",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll Alt",
+                    "type": "Value",
+                    "id": "d4989653-06ea-477b-806e-678c29019e02",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Yaw",
+                    "type": "Value",
+                    "id": "f1e682e9-2180-45dd-bf3e-cdefbee29575",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Yaw Alt",
+                    "type": "Value",
+                    "id": "ff81043c-abd0-4d70-ae27-e6a67dee432e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle",
+                    "type": "Value",
+                    "id": "725b3d83-6282-4fd3-8a1b-ad37029f5146",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle Alt",
+                    "type": "Value",
+                    "id": "c31ac1b2-c5c6-48b5-a36e-a75da1c8065d",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LateralH",
+                    "type": "Value",
+                    "id": "509f03a6-fbc1-428b-be5b-adef4a4a1d5f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LateralH Alt",
+                    "type": "Value",
+                    "id": "e59fb6f7-ea65-4570-b095-16227a4607ff",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LateralV",
+                    "type": "Value",
+                    "id": "dbbf62a4-6b89-4ff1-b0c2-1399be3f5b1f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LateralV Alt",
+                    "type": "Value",
+                    "id": "d5173e9c-6486-4f67-94eb-a7dbc7bf0f0d",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Toggle Reverse",
+                    "type": "Button",
+                    "id": "335e25d1-e016-4849-aee9-90ce40cdda59",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Throttle Decrease",
+                    "type": "Value",
+                    "id": "bb734ebf-84e7-4663-b57e-f5a92686dcfa",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle Increase",
+                    "type": "Value",
+                    "id": "91fd4261-9926-40e4-9994-f0a5c5162ded",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Boost",
+                    "type": "Value",
+                    "id": "ae9270a1-0fa9-4611-bb01-798738d7842c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Drift",
+                    "type": "Value",
+                    "id": "ed106b0c-50e8-43ca-9c22-d52771cefcc3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Velocity Limiter",
+                    "type": "Value",
+                    "id": "fd333179-1e8d-4ef5-878b-b20c724c87b6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "All Flight Assist Toggle",
+                    "type": "Value",
+                    "id": "ce9c21e5-76be-402d-beed-36b5b132f0ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Vector Flight Assist Toggle",
+                    "type": "Value",
+                    "id": "ea0a242d-bdb0-4cc3-805e-49dc36350852",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotational Flight Assist Toggle",
+                    "type": "Value",
+                    "id": "30390ee4-f8b5-4a90-802f-54467c0c1ffc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ShipLights Toggle",
+                    "type": "Button",
+                    "id": "1f75d6cb-59c2-45e8-9859-131c53953c5a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Alt Flight Controls Toggle",
+                    "type": "Button",
+                    "id": "3f4865cf-7469-487c-b73f-6b2f669985cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Raw Delta",
+                    "type": "Value",
+                    "id": "3c8df1e4-b47c-4b6e-b763-2d56ec05e701",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Recenter Mouse",
+                    "type": "Button",
+                    "id": "b43d1338-0375-4761-a9be-0daaaeef9a89",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouselook",
+                    "type": "Value",
+                    "id": "4ddcaf9f-d35b-428a-a645-4eb8680f2d68",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Change Camera",
+                    "type": "Button",
+                    "id": "95356685-c440-435d-8d51-23c268cb2b11",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate Camera H",
+                    "type": "Value",
+                    "id": "1b1cb627-0185-4ca3-b07f-cead421e23ad",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate Camera V",
+                    "type": "Value",
+                    "id": "f414bd1c-908b-4d29-8f4d-6efd9dfc713f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Toggle Camera Rotate Controls",
+                    "type": "Button",
+                    "id": "bee0c1a6-c66a-4892-bebc-64756555eca3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "89d913f5-1c0b-4f48-ad2b-3bcf86512369",
+                    "path": "<Gamepad>/rightStick/y",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd8f9762-df2c-446a-8b38-da9eccf4f1c6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "keyboard axis",
+                    "id": "0c3f738d-702d-461a-ad1a-035961539daa",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "3f84313b-3551-4448-a201-85f7bff2ea23",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "9298a74d-c1c7-4f47-bf8c-387b27c32459",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "keyboard axis",
+                    "id": "9959874c-6b9a-44e5-b0a6-8c9bc5d80b95",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "4072fb64-4a4e-4563-980c-b0a27a8fa645",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "bc94ea84-316b-439d-9441-e1b1e3e3c77c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d9365d2d-6058-4a31-b55d-b2b8fb28062c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1),AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10295127-affe-4080-8c23-1ec5195ecf17",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1)",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "63f29310-dc19-451f-94cc-4ad6e84f182b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "c081f54c-70ab-423f-b2d8-2efdc1761fe0",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "a749d237-31cd-4d12-90f5-b03d4cf04cfc",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "651c1246-8a9f-43b6-aca3-a840f1fb19a3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "d298bde5-1750-40f3-8039-7896623c9112",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "87c1e971-ce2e-4c3f-b6c4-3c070b9e972f",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7abb1e17-bf1a-4f18-bde7-9f3833f1f333",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0fa455c4-00bf-4ffa-89c5-b2db32d9b3f0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "8120d13b-aea1-4179-993b-df84b0940b34",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "60058f84-5d0d-4c06-aa72-4365a03feda5",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "acb04a75-4a54-43b8-83cf-d9966afa224b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "2c809de6-b601-4356-a101-4d3899bf5311",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "346226f4-2b6f-4152-8233-1bf4fbb387ff",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "77de266c-1c09-49a2-8c89-03dd6259d1e9",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "331ba9bf-d059-408b-9c90-91a373888d8b",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89473097-afdd-459b-988c-27a40e49a8ad",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "e6ecec4c-37ac-4679-8d7d-5e761a20654f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "64ccfdd2-3c2a-4961-9687-010eef565c5c",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "8092fd1c-b58a-4a58-8b47-11ff7c7d69d5",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "56e843f9-96fa-4cec-99da-055b523aea92",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "c100028b-c728-4e3f-8d78-1313bbd868cd",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "89cc121b-8471-47e2-b891-72060e020a90",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9e1dd72a-05e2-49c6-9f65-3ddd13ca1e69",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dc064750-1e8b-4127-94b6-5aff0a8a3988",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "bcd22e4c-b938-4fe0-8fb0-b23cae25bd58",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralH",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "f5f5b2b9-5172-45b4-8818-0c4daadfb4f1",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "331a2f6e-cd1a-4b4f-9ae7-5a4a87416cc1",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "473a7484-45f4-4487-974b-1c2217427e04",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralH",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "eba04c70-1cff-462b-bfd5-86e5c2d2a139",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "5f43ec82-7fb8-466f-9ddd-fc08b5f72652",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "72ef87a3-80f5-4c79-a91f-a35cb8d509a5",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "31c82d37-3eda-4c1c-be6b-a05eabfb86c4",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "78f6e3b5-17bb-458c-8b1c-3fa19d8b382b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralV",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "494849b9-b571-4ba5-8cb7-521964f6e452",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "550a0776-272e-43a0-978a-23d708dc2a09",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "a9c40068-8436-4f06-81ac-0220d3b71ccc",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralV",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "7a93a7bb-fd73-4963-b375-2e4713846ee7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "3570a57c-02f8-46fc-95c8-ea6f9b0dce14",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "14aaf69e-25ad-48cb-9525-86177bca1162",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54866b4b-381b-451e-ae16-5b261fad8874",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc747143-d180-4195-aa6c-e34a265716fc",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "All Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c79d88a-9c6c-4284-9ec7-98990003e4e8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "All Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46ee0833-d111-4756-96f7-d158da586e70",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart From Last Checkpoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ea4d440-656d-4da9-9072-b1f9556e3dd3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart From Last Checkpoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c80e8417-bf13-4bd9-8115-38889923b4ef",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16070111-2edc-4f9d-82a3-efba17a6bdd6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "keyboard axis",
+                    "id": "57c99347-fa3e-44db-a6b7-a4a746b4a3ba",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "68940998-98e0-476c-9bfc-15ad4f01b73e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "1dc5d03c-5322-4044-96d6-71fe526f1c34",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "keyboard axis",
+                    "id": "cd4db2f3-dc06-4d8f-8093-2a7e7edbba10",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "f8fbb8b6-738b-46a9-bee1-c4a7ecfe03f8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "e2a0aff6-ccdb-4dc0-b4c2-9e14ebd36c42",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Pitch Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "328a6090-521d-484f-b55e-f825f4e99343",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d73784ef-a63b-4f46-8153-99cdb0f2a3ed",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "a74d5e03-6e2d-4847-ab69-98848c2fecf4",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "a7dc0bb7-3271-494d-bef2-ea85fb1b3661",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "08736676-5a5b-4a86-a610-826d058c5d71",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "6cc5767b-8635-4bc0-b653-0d1a897a36b5",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "ffa49b9b-f541-4f68-bf8f-6e73f226eba6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "dfaef3f9-dc2e-4768-91ee-f019e09142d2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "aaef6a41-3d64-45c0-9489-5dee8e611207",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "Clamp",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2fd1317-b329-46d0-ba6c-557482df92f2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "210c8200-75a0-4bae-ad6b-03d6fb0fad90",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "ca18d7ed-9e23-4522-836b-19e4eb14349f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "ae9d22b0-8807-439b-944b-e992234dbfee",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "55df084a-9d9d-4ba1-b251-b6a7982e229b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "a1e1465a-7856-4448-b0b1-9adc7dbb31d9",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "3da06bb4-8618-4f91-b883-abe842417a37",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Yaw Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "dcfadf66-f8c2-4f07-b28f-196eb5aa45a8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1),AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f64800de-a65c-486a-8553-2baa06d11d5a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1)",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "7de2f4d6-7cac-4c1e-a681-272f3e956cbd",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "5abf0eba-6cee-4c2e-bd22-160023d187c8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "88e9ebfa-486b-411b-86f6-61470276ec46",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "3964025c-469e-4a04-8fd6-bf1e5d1c2ea2",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "c232bdc4-83b4-48f7-942b-cb1d1fed599a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "2a94e115-a901-42b9-8822-d8a581fa77fa",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "988c4397-d34e-4dcc-b3a8-a0496b6212b1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9653c886-a67f-4e2d-973c-08564cd9ed4e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "8dbbd5c3-6cb1-44a2-9cc3-6a92449cbb13",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "16efc1ff-a321-4694-a428-7ea2971255c1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "02df94fe-7b1b-40f3-842a-c2650ca43f91",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "9281548c-969c-4ab5-9882-d4c468a0c221",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "82aad1ea-30ab-4de9-92a7-1cad679aaf96",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "c5b0c144-f90c-4b84-a702-0e1869175c4d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "972eb8dc-d9f8-4905-9d95-747677651286",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3aa8879a-e534-4acb-b15d-ac2250a576d8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "6d718106-c462-4cf3-ac22-9691ad75b679",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "82f2c43d-d90b-4f6d-84ab-422218676916",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "2f67ea2a-a287-494a-8817-9ef1afd9ebd5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "0bc0467a-9d5e-482f-9f29-38c5c44a05c2",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "aea79bf4-9711-4f85-923f-ef63039963ce",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "97618c20-e6fb-4c9f-b02a-d061fd7e21b0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV Alt",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "3f2e38b1-b2be-4a1f-a748-15ea635a2a2a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Alt Flight Controls Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "49194d03-5178-4aef-9f1b-91e116307642",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Alt Flight Controls Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1908f38c-c22f-4863-b106-cb0299e59d97",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Velocity Limiter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93a653ea-2fe2-4db6-926a-09dbb6084480",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Velocity Limiter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38875558-1f4b-42f1-910c-b5593a60f015",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouse Raw Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac3c8db0-3135-4ee3-b07c-9bc98f011f33",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "ShipLights Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0320387c-8eec-4715-af11-e020d209fa17",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "ShipLights Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "522320d6-8903-492c-9287-75c5f6ee9573",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotational Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e221280b-c833-47c4-9932-c31e8c5e34f6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotational Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1d21bc4c-c2c2-4b27-a65f-5db93a257c53",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Vector Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7f825f18-b2c7-47a7-8ad3-abe59d4b78a0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Vector Flight Assist Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35b2f42f-a7e2-4ca1-acb2-1b62f0bca932",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f2c999d-d3a4-4f1a-9379-ff574a882b89",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "102fd659-2342-4630-be02-4a8e1c278608",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Increase",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b8a45e5-66c2-4321-874a-d8fc60757859",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Increase",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d26c3d5f-4adf-438a-bfd5-fa1c5aa5ab32",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Decrease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "181ce6a6-586b-417b-b611-9b0616fb689d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle Decrease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46115d6f-81d5-4825-95aa-40a1c7ce275d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Recenter Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8a2e0447-b09e-40ab-87f9-d11c4fd9501e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Recenter Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c7fb842-9c0e-4010-9a6b-b5e212801f98",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Change Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad8a82a3-1750-4407-bab3-98200061debe",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Change Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e292aff-b040-4d60-a650-e89037bf3b69",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb6a9e52-ce8b-44f7-bcdd-d807bbab11ba",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "1f9def7a-b768-47af-9864-2b67fd161084",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera H",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "296c415e-6c2f-4994-b0e0-7c4f3fe9923b",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "1ee3d877-dfae-44b0-81a5-e2fad358aa35",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "0d505db9-d728-4325-9af7-5ff7f6fc24a0",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera H",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "bc35179d-c1af-4c25-a8be-eff089e15add",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "37dc9965-3122-48bd-9868-77676f7d5317",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6b5b9724-ecf4-433d-b4a5-56e52eda3a14",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21e18902-f73b-4c6a-b88f-b52aba379748",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "button axis 1",
+                    "id": "06d8576e-861b-4fd6-94a5-72c483561a13",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera V",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "e4f70892-bf8c-4c54-b586-3d0e53a1492b",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "e4f0bb6e-49fa-48cc-a988-523e5eb6f2ce",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "button axis 2",
+                    "id": "31c2d374-0baf-4c04-9c54-fba659f25e37",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera V",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "f4a9d276-0a74-4058-9d04-23c3f83b050b",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "0c887bc7-c68d-43f8-ba2f-8e87b5c288e0",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "531f2f5f-1e37-4ea5-8e6f-be42d65e8edb",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouselook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4ba72a4-2edc-4e77-8b70-4d0d78d2cbc7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouselook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f5998ce-9401-4dd5-b12d-7dd9443214d4",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Camera Rotate Controls",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33455776-b82f-4c2e-b6e4-1fdf395501bc",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Toggle Camera Rotate Controls",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df874380-af66-413b-a67b-ee87fb4820cb",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8053a7e1-cf69-4403-91a6-cbeae725fa5b",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ShipArcade",
+            "id": "ed3ae988-95c1-41dc-8cc9-e43a984e423e",
+            "actions": [
+                {
+                    "name": "Restart Track",
+                    "type": "Button",
+                    "id": "d5811d88-1d2d-4c2d-9a5f-e38421aae4a6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Restart From Last Checkpoint",
+                    "type": "Button",
+                    "id": "268d0ec3-f896-47f7-94e0-4aa3ecf7843f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LateralV",
+                    "type": "Value",
+                    "id": "a5e9f02b-5919-4273-94af-ade7c3fd18ad",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LateralH",
+                    "type": "Value",
+                    "id": "e48f381f-1da7-4151-99f2-83cefc1552e0",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle",
+                    "type": "Value",
+                    "id": "f7cd8adb-4f7e-4b58-89e5-4b68ff469de7",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll",
+                    "type": "Value",
+                    "id": "414aaa9d-074a-498e-8118-b3d28cf8eb45",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Boost",
+                    "type": "Value",
+                    "id": "67d4115b-a831-46cf-a078-8fad1e50f91c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Drift",
+                    "type": "Value",
+                    "id": "da424d01-fb41-4cdc-b603-46f7e8612964",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Velocity Limiter",
+                    "type": "Value",
+                    "id": "04d46e24-6796-4bbb-987d-30a978788342",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ShipLights Toggle",
+                    "type": "Button",
+                    "id": "a9065cab-d4d3-4670-88a5-c33519ac4741",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Raw Delta",
+                    "type": "Value",
+                    "id": "1cbfb8a7-cfb8-410c-93ce-b2147720e0a8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Recenter Mouse",
+                    "type": "Button",
+                    "id": "e7d873fc-356f-42cd-ae99-e25ed0507529",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouselook",
+                    "type": "Value",
+                    "id": "11079eeb-a517-4ba3-8e36-fd522eb5dc20",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Change Camera",
+                    "type": "Button",
+                    "id": "8ebd5596-0bef-49f8-8d39-dc53a4068c48",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate Camera H",
+                    "type": "Value",
+                    "id": "a6057397-d4ab-468d-bc88-9d69711b1998",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate Camera V",
+                    "type": "Value",
+                    "id": "c35d0053-91a7-40dc-b7b5-5d9170985795",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0f7c8c4f-4471-4e57-a1be-c0298705dea3",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "6718e203-6a23-4c3f-ae91-9bddfcea0a1c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralV",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "bea09b6d-6e38-4721-a53f-384f684282be",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "9acad715-a053-4146-b7ec-b89272637b4a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Triggers",
+                    "id": "620eb8f2-f043-4bd8-9d97-acdfc12cb669",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "7a964203-6a12-4d62-a544-790b003c6c06",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "b2226775-77df-492c-92be-02d51a7cde39",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "ae086d24-72c2-4e7b-9b6a-5489ce1e5b5f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "3adfa1d3-7a14-4827-a7ce-ab80e14b33a9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "ac2cfdb4-49b3-4445-af1e-560616807f12",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2643f811-7ce0-4b84-bcf1-c5285614891b",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "78c48b51-4421-420b-8b20-e6b8835500ef",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LateralH",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "939df07a-5b55-49eb-b9af-2adc20f0182a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "d94f4b6f-1d7f-4cf0-943e-b27974878e45",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "LateralH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7d77782c-67c9-4c57-8a82-558d92f1d4e9",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06915413-1083-41ce-ba5b-4a9cec0f72ea",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b2edd8db-39e5-4682-ad4a-e0dd64fa8f24",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c23950d7-b5db-4e33-92f4-34ee10dfcf09",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart From Last Checkpoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b24c0e1-9440-4125-a234-035360babd71",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart From Last Checkpoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4746cdae-66f3-4d39-b703-5f673918b618",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouse Raw Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26759a8d-7f43-4fda-b91b-bafdb6198a9d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Recenter Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33d924b3-032f-422f-93e1-c66930d5ed1e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Recenter Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77d4ca22-ea51-46b6-99b6-9afdbc35b4b5",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Change Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8d2119f-742f-4bbe-af87-0bc3d03526b2",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Change Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b5256c43-efdb-41d5-a730-d2cd9a1c4d50",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "DPad",
+                    "id": "1467889d-cd8c-4736-8cd0-2ab2d6c43ce9",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera H",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "c130ed8f-96ce-4567-9058-8c5c84b32c6a",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "d85fbef7-6622-4ccd-8182-026330d08eb3",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard Numpad",
+                    "id": "cd6a9560-97ef-440a-be72-2413504cc08b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera H",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "f95286d4-4b62-4181-9bb8-4b3800b577e4",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "5e5ad62b-43d2-4d29-9486-268e97fb955c",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard Arrows",
+                    "id": "81ea4f0a-262c-4754-a722-92329f371881",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera H",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ab47c51d-4884-44c4-8f52-ef01bd3809fa",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "a52882ce-e935-4d8f-9600-ec8ede8b158d",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera H",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "cde9f5dc-7232-4ebc-9a1a-4467953eff0d",
+                    "path": "<Gamepad>/rightStick/y",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "DPad",
+                    "id": "6a62de8c-5723-44ae-b0b2-8ffd94855031",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera V",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "824d09f7-3acd-4ed4-95df-487b565bb6a8",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "1f94c98c-7579-4458-8edd-e6c7cd93d43e",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard Numpad",
+                    "id": "18bcd9c9-c5be-44a5-a24f-ddf2024b113b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera V",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "07785ec4-7602-4561-a19a-5e1287e26794",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "17f2cedc-1ebb-4e4f-9df1-abbb9413d1f0",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard Arrows",
+                    "id": "dd7fb690-bfa7-4bec-a3ec-730e3497188c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Camera V",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "1f512e21-95fc-4dc7-829d-a3f81a77806f",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1b229ac7-48c5-4604-bea9-658a3356dfb2",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Rotate Camera V",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "af7ec0af-0a39-4d68-9553-fe0a3426c440",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouselook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93eb8ff1-845e-4fb8-a318-58f5428ff429",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Mouselook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "704dd8b0-897d-4266-b8b6-321e5fd5f9b7",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Restart Track",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7d884f62-38f7-4fa0-9bb0-185b89c6510f",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Velocity Limiter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d930447-9f35-4c88-aaf5-c49832e8adfa",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Velocity Limiter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15a81ba8-7a43-4849-98a4-c7dfc2b6b3a8",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "ShipLights Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec799843-3754-4efd-9cfd-6f5f1f54ae82",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "ShipLights Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Shoulders",
+                    "id": "98eeedbc-1afa-444d-834d-6e8d1f04e551",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "11c9b467-a8aa-4abf-99e2-054b9db040f0",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "8d22491f-fb35-40c0-a0e2-abfac625bb03",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "cb255f9a-2638-417d-9ff0-7b6e85bc3ea7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "df9140d2-dd27-44fc-aea4-69a474e3a0e5",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1ff88920-cf78-4fa5-b81a-c80162dec969",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e1b12148-e449-48f9-a166-4dcd4fdaa50d",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b42b674-2c84-42f2-a5c5-ce2dcd1fe61c",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "888bea3e-ec58-4da0-a920-6757edbeb6ca",
+            "actions": [
+                {
+                    "name": "Navigate",
+                    "type": "PassThrough",
+                    "id": "8b3d2fd1-035e-4240-9c09-2e578ad760cf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "ab2b2964-568c-4505-ae39-7bcc4d274a2c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "ddc2ba6b-bd11-40c7-a1cc-c9942a7497b4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "46b4d513-7d1c-4827-8bf1-822bdc965d68",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "8f89d427-61c1-474f-baee-ebffe0857650",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ScrollWheel",
+                    "type": "PassThrough",
+                    "id": "4228771a-3eee-4250-bb1b-1186f85c0c5d",
+                    "expectedControlType": "Vector2",
+                    "processors": "NormalizeMouseScroll",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MiddleClick",
+                    "type": "PassThrough",
+                    "id": "b58572f5-a6c6-4087-ba27-b30ab641a6f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightClick",
+                    "type": "PassThrough",
+                    "id": "95429269-929c-4e19-93d3-cffcf681fa99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackedDevicePosition",
+                    "type": "PassThrough",
+                    "id": "f46580fa-4184-446e-a652-b3765a928792",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TrackedDeviceOrientation",
+                    "type": "PassThrough",
+                    "id": "d4da84d6-47a4-43e7-9166-b6a847ba3bcf",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Gamepad",
+                    "id": "312899f1-49b6-407f-b3d3-6cb3489e7dc9",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "7da8bfd2-639f-4f0f-b04d-7b5f56f02dfe",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "49e6522a-4bf8-4f88-9f63-9b98fe6fe634",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "30ef3702-07e7-49c5-a68b-7e08b057bf60",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "577e7658-0680-446c-be85-403feb2e5886",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0c1b5227-f387-4e97-b9f6-fafee9f18179",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "8a2a375d-15db-4635-aed8-873523905daa",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "dcd48326-1c20-456f-9154-074c16087b2a",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d94053bd-323d-45f2-929a-a866d1eb829e",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "12fb7e30-d8f2-4d4e-8013-e4e5ed41b989",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "13dc55ae-3bb2-4b19-998d-6efe2867e624",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "9285e6ae-8166-4935-a27c-afda35f653ee",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "9d56f4bf-7875-407b-b5ff-ce61580184c8",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "ba9149bf-a8e8-46e3-b439-0b353caad962",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "eefc3638-71fa-405d-847b-b88c19eea3a3",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "944c3866-f148-4d29-9c75-ffa4c9b56055",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "501ab8a3-e4a4-4182-85e7-13fd34136db3",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "455255e8-7bb5-4c6d-a45d-09107bb0816e",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "665f9bf4-c73e-4a32-8d62-60adcf64f4e9",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Custom",
+                    "id": "5896f6f8-0849-4163-8e96-3ff4c53b55f6",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "1c4853a9-5d16-4446-9b0c-0401fe6c5515",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "9ce86d88-69e7-470d-8002-233bb420c94e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "76a72290-e979-4a60-a281-38d074727737",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "6bdb46ff-1531-45ef-adda-f8b22e286067",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a94a125b-0a45-44bb-b6ea-b2655c3b92f4",
+                    "path": "*/{Submit}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b85edb6-bf23-42fe-8304-b3dcf017e0c3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a39d5267-f482-4884-aff6-2f44340f7fdb",
+                    "path": "*/{Cancel}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5145a82e-3160-44ba-aaa8-57ad62fdc85b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce1737f9-4cc7-4586-9cec-1f8ee59a6269",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "111b5ed2-9d38-40c1-b354-b59729ab87ae",
+                    "path": "<Pen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c24c5cdf-0873-444e-9a72-144e3f626c43",
+                    "path": "<Touchscreen>/touch*/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63a102e5-1e3d-407d-a144-7f0686ca0065",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ff66932-b0f2-478f-b71a-1fb5246917d3",
+                    "path": "<Pen>/tip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21c68fe9-e8f1-471d-82d0-874de11d3aad",
+                    "path": "<Touchscreen>/touch*/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "756d8397-462b-4718-aa63-279b239a2b76",
+                    "path": "<XRController>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b263b07-4d2c-4a50-886e-2b568e9db936",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "ScrollWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b9df3a6-ff71-4b16-a712-f3066c2304eb",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "MiddleClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a86a8e6b-9a60-4f6c-8dc2-25d716f36bc9",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e2a49c3-be72-4df2-b821-45616ed18569",
+                    "path": "<XRController>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "TrackedDevicePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef839978-67cd-4d89-ab83-d7d8a90dc40e",
+                    "path": "<XRController>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "FreeCam",
+            "id": "25a5910c-eeb7-40bc-ac29-d794a76a8039",
+            "actions": [
+                {
+                    "name": "FreeCamMove",
+                    "type": "Value",
+                    "id": "8f668166-981a-4480-a6cb-6d35c100371e",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "FreeCamLook",
+                    "type": "Value",
+                    "id": "1f9c05fa-91de-4d6f-a8f6-af1adc74bbd0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "FreeCamAscend",
+                    "type": "Value",
+                    "id": "521decb2-cf61-4709-9bba-f51f55aa6065",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "FreeCamToggleMovementLock",
+                    "type": "Button",
+                    "id": "4e324fcf-88bc-412a-a3e8-10acbe52a171",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FreeCamToggleFocusLock",
+                    "type": "Button",
+                    "id": "018f478f-0bee-47a0-9d65-487d77c6d30c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FreeCamToggleFreeze",
+                    "type": "Button",
+                    "id": "e6df418f-48c8-4965-9d11-e68901ac5eb0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FreeCamFieldOfView",
+                    "type": "PassThrough",
+                    "id": "97fc58d1-ad40-4ab3-a5a4-76051f6c9982",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FreeCamSetMotionMultiplier",
+                    "type": "Value",
+                    "id": "6410c5da-4397-4b97-8e1c-447ea333a074",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00ea07f3-d3cb-4315-9dab-063c509fa63d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "FreeCamMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "bf893bd8-cd1e-451d-8124-1e309fb32094",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "c4ea642a-ae5c-43ef-96d0-c57fa76a9073",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "e3dbc7cc-5e32-4c42-aa13-13e3211c2816",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "10daaf35-2d91-4ae3-8df4-1095a1b878f7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "7c94bf08-c173-41a7-aa11-9bf9846487d5",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5b0be296-c28c-460c-b490-682b3019512a",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone(min=0.05)",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "e465ae48-d855-4cf9-910e-1d8e9d7855ea",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamLook",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "e79fdcfa-2c9d-4380-8352-e7d80cb2191a",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "3079ff12-a382-4ce9-9fa2-1954998c7c97",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "98cb2fbb-8c97-486c-a5d8-6a9322979bf6",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "03492d48-c1d6-4123-9e40-488345612f3f",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "dc0c6754-0632-432f-9153-744a86b32dc7",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=0.02,y=0.02)",
+                    "groups": "Everything",
+                    "action": "FreeCamLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "d286c84e-e0a0-418e-83ae-c69f1861cc1a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamAscend",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "4d380a2e-c06d-4828-a945-2777fc3ec0bf",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamAscend",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "63fa8a15-e1e4-4f75-b871-51152fc06068",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamAscend",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "5c980cf0-b3ac-448b-8524-b3aa2daf47fa",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamAscend",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "47bacf3e-7f49-4060-8fd7-872c541882a7",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamAscend",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "fcbef9e2-bf3b-48bb-815c-46af760eb7e0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamAscend",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "89bee345-dabc-4b4f-b79e-8e37e6158807",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamToggleMovementLock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fce1725c-d198-4a8e-8f91-3f8500ccb7cd",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamToggleFocusLock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6d30b17-6a16-4123-9f36-14997d7b7e98",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamToggleFocusLock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a369174-da9e-45fe-841e-cdbba2db78fd",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamToggleFreeze",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b39b3c7-f650-42ed-9a91-c5b7c23acd61",
+                    "path": "<Keyboard>/pause",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamToggleFreeze",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "7ddd78f5-dbd2-4c3c-9fe7-966164bd4d19",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3aacc191-6669-4d60-9eda-b9eb33f4e60e",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "91bd1909-642e-4e6e-af2a-da3ad7053bf6",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "266e2a34-d668-47b9-82b6-16c50c738770",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "83229e9b-ca89-4301-bd44-97733e8b45ec",
+                    "path": "<Keyboard>/minus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d05f67da-b8dd-401b-b5df-34233f07cb7b",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "68337601-881e-4f2f-9d6a-d04a3e1429a1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c35912d4-1f8f-4fc2-b10a-942a5efce452",
+                    "path": "<Keyboard>/numpadMinus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "993e1493-a780-4fa6-bf87-baef4c4d861c",
+                    "path": "<Keyboard>/numpadPlus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamSetMotionMultiplier",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "6716d50c-f92c-4db4-b23f-4da06fbdaed8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b6311a51-7ed9-49da-ae1b-b31530b4c5a1",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "351887b6-e030-43ce-b402-d83e945938f9",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "172a6dd2-efc6-4e4a-9258-f9cae8b412c3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b2e1c279-39c7-4f80-ba76-0c62182c7a34",
+                    "path": "<Keyboard>/leftBracket",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "0f94bc30-5e8a-42db-9d72-a49660e93212",
+                    "path": "<Keyboard>/rightBracket",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Everything",
+                    "action": "FreeCamFieldOfView",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Everything",
+            "bindingGroup": "Everything",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
