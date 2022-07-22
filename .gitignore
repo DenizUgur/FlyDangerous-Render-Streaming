@@ -75,3 +75,6 @@ Assets/Standard\ Assets/Tools/*
 UserSettings/
 
 ProjectSettings/RiderScriptEditorPersistedState.asset
+
+# Other
+steam_appid.txt

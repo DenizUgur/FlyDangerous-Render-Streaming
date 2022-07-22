@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.endel.nativewebsocket": "https://github.com/endel/NativeWebSocket.git#upm",
     "com.unity.2d.spriteshape": "7.0.4",
     "com.unity.cinemachine": "2.8.4",
     "com.unity.collab-proxy": "1.15.15",
