@@ -51,7 +51,7 @@ namespace Misc {
                 NetworkServer.dontListen = true;
                 FdNetworkManager.Instance.StartHost();
 
-                var level = Level.CrestLoop;
+                var level = Level.GentleStart;
                 FdNetworkManager.Instance.StartGameLoadSequence(SessionType.Singleplayer, level.Data);
                 Game.Instance.loadedMainLevel = level;
             }
