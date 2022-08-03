@@ -1,41 +1,60 @@
 using System;
+using System.Threading;
+using System.Reflection;
 using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+
 using UnityEngine;
+using Unity.Profiling;
 
 using NativeWebSocket;
 
-[System.Serializable]
-public class RendererAttributes
+struct ProfilerInstance
 {
-    public long unixTime;
-    public int batches;
-    public int triangles;
-    public int vertices;
-    public int shadowCasters;
-    public int renderTextureChanges;
-    public float frameTime;
-    public float renderTime;
-    public int renderTextureCount;
-    public int renderTextureBytes;
-    public int usedTextureMemorySize;
-    public int usedTextureCount;
-    public string screenRes;
-    public int screenBytes;
-    public int vboTotal;
-    public int vboTotalBytes;
-    public int vboUploads;
-    public int vboUploadBytes;
-    public int ibUploads;
-    public int ibUploadBytes;
-    public int visibleSkinnedMeshes;
-    public int drawCalls;
+    string Category;
+    string Name;
+    public string ShortName;
+    ProfilerRecorder Recorder;
+
+    public ProfilerInstance(string category, string name, string shortName)
+    {
+        Category = category;
+        Name = name;
+        ShortName = shortName;
+        Recorder = new ProfilerRecorder(ProfilerInstance.GetCategory(Category), Name);
+    }
+
+    public void Start()
+    {
+        Recorder.Start();
+    }
+
+    public void Dispose()
+    {
+        Recorder.Dispose();
+    }
+
+    public double Get()
+    {
+        string val = Recorder.LastValue.ToString();
+        if (val == "true" || val == "false")
+            return val == "true" ? 1 : 0;
+        return Convert.ToDouble(val);
+    }
+
+    private static ProfilerCategory GetCategory(string propName)
+    {
+        ProfilerCategory pc = new ProfilerCategory();
+        return (ProfilerCategory)pc.GetType().GetProperty(propName).GetValue(pc, null);
+    }
+
 }
 
 [System.Serializable]
 public class RendererModifications
 {
+    public bool instantiated;
     public int unixTimestamp;
     public int antiAliasing;
     public float lodBias;
@@ -49,25 +68,54 @@ public class RendererModifications
     public int targetFrameRate;
 }
 
+[System.Serializable]
+public class RendererAttributes
+{
+    public long unixTime;
+    public double DrawCalls;
+    public double VerticesCount;
+    // add more attributes here. All should be double.
+}
+
 public class RendererSettings : MonoBehaviour
 {
     [SerializeField, Tooltip("Proxy server url.")]
-    private string proxyServer = "ws://localhost:80/proxy/renderer";
+    private string proxyServer = "ws://localhost:8080/proxy/renderer";
 
-    [SerializeField, Tooltip("Send interval (sec)."), Range(2, 10)]
-    private int sendInterval = 2;
+    [SerializeField, Tooltip("Send interval (sec)."), Range(.1f, 4)]
+    private float sendInterval = .5f;
 
-    [SerializeField, Tooltip("Update interval (sec)."), Range(2, 10)]
-    private int updateInterval = 2;
+    [SerializeField, Tooltip("Update interval (sec)."), Range(.1f, 4)]
+    private float updateInterval = .5f;
 
-    WebSocket websocket;
-    RendererAttributes rendererAttributes;
-    RendererModifications rendererModifications;
+    private WebSocket websocket;
+    private RendererAttributes rendererAttributes;
+    private RendererModifications rendererModifications;
+    private static Mutex writeLock = new Mutex();
+
+    // Coroutines
+    private IEnumerator coroutineSync;
+    private IEnumerator coroutineSend;
+
+    // Profiler
+    private List<ProfilerInstance> profilerInstances;
 
     void Awake()
     {
         rendererAttributes = new RendererAttributes();
         rendererModifications = new RendererModifications();
+
+        coroutineSync = SyncAttributes();
+        coroutineSend = SendRendererAttributes();
+    }
+
+    void OnEnable()
+    {
+        profilerInstances = new List<ProfilerInstance>(){
+            new ProfilerInstance("Render", "Draw Calls Count", "DrawCalls"),
+            new ProfilerInstance("Render", "Vertices Count", "VerticesCount"),
+            // add more profilers here
+        };
     }
 
     // Start is called before the first frame update
@@ -86,11 +134,15 @@ public class RendererSettings : MonoBehaviour
             t.Start();
         };
 
+        // Start profilers
+        foreach (var recorder in profilerInstances)
+            recorder.Start();
+
         // Update renderer attributes at regular intervals.
-        InvokeRepeating("SyncAttributes", 0.0f, updateInterval);
+        StartCoroutine(coroutineSync);
 
         // Keep sending attributes at regular intervals.
-        InvokeRepeating("SendRendererAttributes", updateInterval, sendInterval);
+        StartCoroutine(coroutineSend);
 
         // waiting for messages
         await websocket.Connect();
@@ -103,72 +155,83 @@ public class RendererSettings : MonoBehaviour
 #endif
     }
 
-    void SyncAttributes()
+    IEnumerator SyncAttributes()
     {
-        if (websocket.State != WebSocketState.Open)
-            return;
-
-        // Get time
-        DateTime now = DateTime.Now;
-        long unixTime = ((DateTimeOffset)now).ToUnixTimeSeconds();
-
-        // Read
+        while (true)
         {
-            rendererAttributes.unixTime = unixTime;
-            rendererAttributes.batches = UnityEditor.UnityStats.batches;
-            rendererAttributes.triangles = UnityEditor.UnityStats.triangles;
-            rendererAttributes.vertices = UnityEditor.UnityStats.vertices;
-            rendererAttributes.shadowCasters = UnityEditor.UnityStats.shadowCasters;
-            rendererAttributes.renderTextureChanges = UnityEditor.UnityStats.renderTextureChanges;
-            rendererAttributes.frameTime = UnityEditor.UnityStats.frameTime;
-            rendererAttributes.renderTime = UnityEditor.UnityStats.renderTime;
-            rendererAttributes.renderTextureCount = UnityEditor.UnityStats.renderTextureCount;
-            rendererAttributes.renderTextureBytes = UnityEditor.UnityStats.renderTextureBytes;
-            rendererAttributes.usedTextureMemorySize = UnityEditor.UnityStats.usedTextureMemorySize;
-            rendererAttributes.usedTextureCount = UnityEditor.UnityStats.usedTextureCount;
-            rendererAttributes.screenRes = UnityEditor.UnityStats.screenRes;
-            rendererAttributes.screenBytes = UnityEditor.UnityStats.screenBytes;
-            rendererAttributes.vboTotal = UnityEditor.UnityStats.vboTotal;
-            rendererAttributes.vboTotalBytes = UnityEditor.UnityStats.vboTotalBytes;
-            rendererAttributes.vboUploads = UnityEditor.UnityStats.vboUploads;
-            rendererAttributes.vboUploadBytes = UnityEditor.UnityStats.vboUploadBytes;
-            rendererAttributes.ibUploads = UnityEditor.UnityStats.ibUploads;
-            rendererAttributes.ibUploadBytes = UnityEditor.UnityStats.ibUploadBytes;
-            rendererAttributes.visibleSkinnedMeshes = UnityEditor.UnityStats.visibleSkinnedMeshes;
-            rendererAttributes.drawCalls = UnityEditor.UnityStats.drawCalls;
-        }
+            yield return new WaitForSeconds(updateInterval);
 
-        // Write
-        {
-            QualitySettings.antiAliasing = rendererModifications.antiAliasing;
-            QualitySettings.lodBias = rendererModifications.lodBias;
-            QualitySettings.masterTextureLimit = rendererModifications.masterTextureLimit;
-            QualitySettings.pixelLightCount = rendererModifications.pixelLightCount;
-            QualitySettings.realtimeReflectionProbes = rendererModifications.realtimeReflectionProbes;
-            QualitySettings.shadowCascades = rendererModifications.shadowCascades;
-            QualitySettings.shadowDistance = rendererModifications.shadowDistance;
-            QualitySettings.softParticles = rendererModifications.softParticles;
-            QualitySettings.vSyncCount = rendererModifications.vSyncCount;
-            Application.targetFrameRate = rendererModifications.targetFrameRate;
+            if (websocket.State != WebSocketState.Open)
+                continue;
+
+            // Get time
+            DateTime now = DateTime.Now;
+            long unixTime = ((DateTimeOffset)now).ToUnixTimeMilliseconds();
+
+            // Read
+            {
+                writeLock.WaitOne();
+
+                foreach (var recorder in profilerInstances)
+                {
+                    FieldInfo field = rendererAttributes.GetType().GetField(recorder.ShortName);
+                    field.SetValue(rendererAttributes, recorder.Get());
+                }
+                rendererAttributes.unixTime = unixTime;
+
+                writeLock.ReleaseMutex();
+            }
+
+            // Write
+            {
+                if (!rendererModifications.instantiated)
+                    continue;
+
+                QualitySettings.antiAliasing = rendererModifications.antiAliasing;
+                QualitySettings.lodBias = rendererModifications.lodBias;
+                QualitySettings.masterTextureLimit = rendererModifications.masterTextureLimit;
+                QualitySettings.pixelLightCount = rendererModifications.pixelLightCount;
+                QualitySettings.realtimeReflectionProbes = rendererModifications.realtimeReflectionProbes;
+                QualitySettings.shadowCascades = rendererModifications.shadowCascades;
+                QualitySettings.shadowDistance = rendererModifications.shadowDistance;
+                QualitySettings.softParticles = rendererModifications.softParticles;
+                QualitySettings.vSyncCount = rendererModifications.vSyncCount;
+                Application.targetFrameRate = rendererModifications.targetFrameRate;
+            }
         }
     }
 
-    async void SendRendererAttributes()
+    IEnumerator SendRendererAttributes()
     {
-        if (websocket.State != WebSocketState.Open)
-            return;
+        while (true)
+        {
+            yield return new WaitForSeconds(sendInterval);
 
-        string message = JsonUtility.ToJson(rendererAttributes);
-        await websocket.SendText(message);
+            if (websocket.State != WebSocketState.Open)
+                continue;
+
+            {
+                writeLock.WaitOne();
+
+                string message = JsonUtility.ToJson(rendererAttributes);
+                websocket.SendText(message);
+
+                writeLock.ReleaseMutex();
+            }
+        }
     }
 
     void ReceiveRendererModifications(byte[] data)
     {
-        if (websocket.State != WebSocketState.Open)
-            return;
-
         string message = System.Text.Encoding.UTF8.GetString(data);
         rendererModifications = JsonUtility.FromJson<RendererModifications>(message);
+        rendererModifications.instantiated = true;
+    }
+
+    void OnDisable()
+    {
+        foreach (var recorder in profilerInstances)
+            recorder.Dispose();
     }
 
     private async void OnApplicationQuit()
