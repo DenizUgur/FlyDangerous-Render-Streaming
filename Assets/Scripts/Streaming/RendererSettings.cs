@@ -4,9 +4,13 @@ using System.Reflection;
 using System.Collections;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.IO;
+using System.Runtime.Serialization.Json;
 
 using UnityEngine;
 using Unity.Profiling;
+using Unity.Profiling.LowLevel.Unsafe;
 
 using NativeWebSocket;
 
@@ -68,14 +72,6 @@ public class RendererModifications
     public int targetFrameRate;
 }
 
-[System.Serializable]
-public class RendererAttributes
-{
-    public long unixTime;
-    public double DrawCalls;
-    public double VerticesCount;
-    // add more attributes here. All should be double.
-}
 
 public class RendererSettings : MonoBehaviour
 {
@@ -89,7 +85,7 @@ public class RendererSettings : MonoBehaviour
     private float updateInterval = .5f;
 
     private WebSocket websocket;
-    private RendererAttributes rendererAttributes;
+    private Dictionary<string, double> rendererAttributes;
     private RendererModifications rendererModifications;
     private static Mutex writeLock = new Mutex();
 
@@ -102,20 +98,43 @@ public class RendererSettings : MonoBehaviour
 
     void Awake()
     {
-        rendererAttributes = new RendererAttributes();
+        rendererAttributes = new Dictionary<string, double>();
         rendererModifications = new RendererModifications();
 
         coroutineSync = SyncAttributes();
         coroutineSend = SendRendererAttributes();
     }
 
-    void OnEnable()
+    unsafe void OnEnable()
     {
-        profilerInstances = new List<ProfilerInstance>(){
-            new ProfilerInstance("Render", "Draw Calls Count", "DrawCalls"),
-            new ProfilerInstance("Render", "Vertices Count", "VerticesCount"),
-            // add more profilers here
-        };
+        var availableStatHandles = new List<ProfilerRecorderHandle>();
+        ProfilerRecorderHandle.GetAvailable(availableStatHandles);
+
+        var validCategories = new List<String>() { "Ai", "Animation", "Audio", "Gui", "Internal", "Lighting", "Loading", "Memory", "Network", "Particles", "Physics", "Render", "Scripts", "Video", "Virtual Texturing", "Vr" };
+
+        string pattern = @"['`)\[|(>:\] /\-\\_<!.']";
+        Regex regex = new Regex(pattern);
+
+        profilerInstances = new List<ProfilerInstance>();
+        int total = 0;
+        int failed = 0;
+        foreach (var h in availableStatHandles)
+        {
+            var statDesc = ProfilerRecorderHandle.GetDescription(h);
+            if (!validCategories.Contains(statDesc.Category.ToString()))
+                continue;
+
+            try
+            {
+                string shortName = regex.Replace(statDesc.Name, "");
+                ProfilerInstance pi = new ProfilerInstance(statDesc.Category.ToString(), statDesc.Name, shortName);
+                profilerInstances.Add(pi);
+                rendererAttributes.Add(shortName, -1);
+            }
+            catch { failed++; };
+            total++;
+        }
+        Debug.Log($"Found {total} stats, {failed} failed");
     }
 
     // Start is called before the first frame update
@@ -173,11 +192,7 @@ public class RendererSettings : MonoBehaviour
                 writeLock.WaitOne();
 
                 foreach (var recorder in profilerInstances)
-                {
-                    FieldInfo field = rendererAttributes.GetType().GetField(recorder.ShortName);
-                    field.SetValue(rendererAttributes, recorder.Get());
-                }
-                rendererAttributes.unixTime = unixTime;
+                    rendererAttributes[recorder.ShortName] = recorder.Get();
 
                 writeLock.ReleaseMutex();
             }
@@ -213,7 +228,7 @@ public class RendererSettings : MonoBehaviour
             {
                 writeLock.WaitOne();
 
-                string message = JsonUtility.ToJson(rendererAttributes);
+                string message = DataToJson(rendererAttributes);
                 websocket.SendText(message);
 
                 writeLock.ReleaseMutex();
@@ -239,4 +254,19 @@ public class RendererSettings : MonoBehaviour
         await websocket.Close();
     }
 
+    private static string DataToJson(Dictionary<string, double> data)
+    {
+        MemoryStream stream = new MemoryStream();
+
+        DataContractJsonSerializer serialiser = new DataContractJsonSerializer(
+            data.GetType(),
+            new DataContractJsonSerializerSettings()
+            {
+                UseSimpleDictionaryFormat = true
+            });
+
+        serialiser.WriteObject(stream, data);
+
+        return System.Text.Encoding.UTF8.GetString(stream.ToArray());
+    }
 }
