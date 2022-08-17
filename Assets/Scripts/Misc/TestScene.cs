@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using System;
 using Cinemachine;
 using Core;
 using Core.MapData;
@@ -51,12 +52,25 @@ namespace Misc {
                 NetworkServer.dontListen = true;
                 FdNetworkManager.Instance.StartHost();
 
-                var level = Level.GentleStart;
+                var level = GetLevelFromId();
                 FdNetworkManager.Instance.StartGameLoadSequence(SessionType.Singleplayer, level.Data);
                 Game.Instance.loadedMainLevel = level;
             }
 
             StartCoroutine(StartGame());
+        }
+
+        private Level GetLevelFromId()
+        {
+            var args = System.Environment.GetCommandLineArgs();
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "--level" && args.Length > i + 1)
+                {
+                    return Level.FromId(Int32.Parse(args[i + 1]));
+                }
+            }
+            return Level.FromId(0);
         }
 
         private void OnApplicationQuit() {
