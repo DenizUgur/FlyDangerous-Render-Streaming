@@ -103,6 +103,12 @@ public class RendererSettings : MonoBehaviour
 
         coroutineSync = SyncAttributes();
         coroutineSend = SendRendererAttributes();
+
+        // Get options from arguments
+        var opts = GetOpts();
+        proxyServer = opts["proxy-addr"];
+        sendInterval = opts["send-interval"];
+        updateInterval = opts["update-interval"];
     }
 
     unsafe void OnEnable()
@@ -268,5 +274,33 @@ public class RendererSettings : MonoBehaviour
         serialiser.WriteObject(stream, data);
 
         return System.Text.Encoding.UTF8.GetString(stream.ToArray());
+    }
+
+    private Dictionary<string, dynamic> GetOpts()
+    {
+        var opts = new Dictionary<string, dynamic>()
+        {
+            { "proxy-addr", "ws://localhost:8080/proxy/renderer" },
+            { "send-interval", .5f },
+            { "update-interval", .5f },
+        };
+
+        var args = System.Environment.GetCommandLineArgs();
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--proxy-addr" && args.Length > i + 1)
+            {
+                opts["proxy-addr"] = args[i + 1];
+            }
+            else if (args[i] == "--send-interval" && args.Length > i + 1)
+            {
+                opts["send-interval"] = float.Parse(args[i + 1]);
+            }
+            else if (args[i] == "--update-interval" && args.Length > i + 1)
+            {
+                opts["update-interval"] = float.Parse(args[i + 1]);
+            }
+        }
+        return opts;
     }
 }
