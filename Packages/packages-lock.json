@@ -273,7 +273,7 @@
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.editorcoroutines": "1.0.0"
       },
-      "hash": "de855476dc633a97a6e91e44475c279ffa9ecf87"
+      "hash": "4b72e0e2121b4c639e18cbcb231ca1ebb00300d7"
     },
     "com.unity.xr.interaction.toolkit": {
       "version": "1.0.0-pre.4",
