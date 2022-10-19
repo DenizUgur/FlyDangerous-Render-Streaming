@@ -474,7 +474,6 @@ GameObject:
   - component: {fileID: 2702456114971785382}
   - component: {fileID: 2003749717712058232}
   - component: {fileID: 6898852573256906747}
-  - component: {fileID: -2239169444573167013}
   - component: {fileID: -1193490201299017741}
   - component: {fileID: 6075889156331721267}
   m_Layer: 0
@@ -574,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457c04e65ecd7a8408615d9170eb8c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  streamingSize: {x: 1280, y: 720}
+  streamingSize: {x: 3840, y: 2160}
   depth: 0
   antiAliasing: 1
 --- !u!114 &6898852573256906747
@@ -589,21 +588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e4557ba7cb056499034647b21b6361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-2239169444573167013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2202320483295001056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8244f687bd2154e8323e073cd2a842, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  proxyServer: ws://localhost:80/proxy/renderer
-  sendInterval: 2
-  updateInterval: 2
 --- !u!114 &-1193490201299017741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,8 +918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proxyServer: ws://localhost:8080/proxy/renderer
-  sendInterval: 2
-  updateInterval: 2
+  sendInterval: 0.2
+  updateInterval: 0.2
 --- !u!1 &3632952456528988851
 GameObject:
   m_ObjectHideFlags: 0
